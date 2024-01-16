@@ -1,0 +1,23 @@
+<div class="container">
+  <img
+    src="/assets/img/store-main-page.jpg"
+    alt="Store Main page Photo"
+    height="250px"
+  />
+
+  <div class="main-container">
+    <div *ngFor="let storeItem of stores" class="store-info"></div>
+
+    <div class="store-menu-container">
+      <app-store-menu [store]="store"></app-store-menu>
+    </div>
+
+    <div class="cart-container">
+      <!-- <app-cart [cartCount]="cartCountFromStoreMenu"></app-cart> -->
+      <app-cart></app-cart>
+    </div>
+  </div>
+  <div class="order-button">
+    <button (click)="goToOrderPage()">Review and Submit Order</button>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+[
+  {
+    "storeId": 1,
+    "storeName": "Lila's",
+    "storeCategory": "Food",
+    "photo": "/assets/img/food.carousel11.jpg",
+    "address": "Syntagma 15",
+    "rate": "5"
+  },
+  {
+    "storeId": 2,
+    "storeName": "Pizza Love",
+    "storeCategory": "Food",
+    "photo": "/assets/img/food.carousel4.jpg",
+    "address": "Ippokrateiou 35",
+    "rate": "5"
+  },
+  {
+    "storeId": 3,
+    "storeName": "Athens Pizza",
+    "storeCategory": "Food",
+    "photo": "/assets/img/food.carousel3.jpg",
+    "address": "Menelaou 22",
+    "rate": "5"
+  },
+  {
+    "storeId": 4,
+    "storeName": "Jack's Burger House",
+    "storeCategory": "Food",
+    "photo": "/assets/img/food.carousel5.jpg",
+    "address": "Ampelokipous 23rd Av.",
+    "rate": "5"
+  },
+  {
+    "storeId": 5,
+    "storeName": "The Big Bad Wolf",
+    "storeCategory": "Food",
+    "photo": "/assets/img/food.carousel6.jpg",
+    "address": "Agioi Anargiroi 98",
+    "rate": "5"
+  },
+  {
+    "storeId": 6,
+    "storeName": "Michel",
+    "storeCategory": "Coffee",
+    "photo": "/assets/img/food.carousel8.jpg",
+    "address": "Ampelokipoi 72",
+    "rate": "5"
+  },
+  {
+    "storeId": 7,
+    "storeName": "Best Coffee Ever",
+    "storeCategory": "Coffee",
+    "photo": "/assets/img/food.carousel12.jpg",
+    "address": "Ampelokipoi 72",
+    "rate": "5"
+  },
+  {
+    "storeId": 8,
+    "storeName": "Eva's House",
+    "storeCategory": "Beverages",
+    "photo": "/assets/img/food.carousel7.jpg",
+    "address": "Ampelokipoi 72",
+    "rate": "5"
+  }
+]

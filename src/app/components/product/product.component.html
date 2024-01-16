@@ -1,0 +1,20 @@
+<div class="container">
+  <ng-container *ngIf="products && products.length > 0">
+    <div *ngFor="let product of products" class="product-card">
+      <div class="product-details">
+        <h5>{{ product.productName }}</h5>
+        <p class="description">{{ product.description }}</p>
+        <p>From ${{ product.price }}</p>
+        <hr />
+      </div>
+
+      <img [src]="product.photo" alt="Product image" class="product-image" />
+
+      <app-counter
+        *ngIf="!isOrderPage && !isOrder"
+        [product]="product"
+        (countChange)="onCounterChange(product, $event)"
+      ></app-counter>
+    </div>
+  </ng-container>
+</div>

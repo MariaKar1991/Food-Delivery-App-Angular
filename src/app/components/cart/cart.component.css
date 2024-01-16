@@ -1,0 +1,28 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: green;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -16px;
+}
+
+.empty {
+  color: grey;
+}
+
+@media screen and (max-width: 575px) {
+  .order-page {
+    width: 50%;
+  }
+}

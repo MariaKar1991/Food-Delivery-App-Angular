@@ -1,0 +1,30 @@
+<div class="container">
+  <img src="./assets/img/food-account.jpg" width="95%" />
+
+  <h1 class="account-page-title">My Account</h1>
+  <div class="inner-container">
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      "
+    >
+      <table class="table-title">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        <tr *ngFor="let user of user; let i = index">
+          <td>{{ user.name }}</td>
+          <td>{{ user.surname }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phoneNumber }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

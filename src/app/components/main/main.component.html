@@ -1,0 +1,119 @@
+<div class="container">
+  <app-header />
+
+  <div id="carouselIndicators1" class="carousel slide">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselIndicators1"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselIndicators1"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselIndicators1"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="./assets/img/banner3.jpg"
+          class="d-block w-100"
+          alt="food photo carousel"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./assets/img/banner2.jpg"
+          class="d-block w-100"
+          alt="food photo carousel"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="./assets/img/banner1.jpg"
+          class="d-block w-100"
+          alt="food photo carousel"
+        />
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselIndicators1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselIndicators1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <h1 class="text-center m-4">Choose Your Favorite Foodies</h1> -->
+
+    <h2>Top Stores</h2>
+
+    <app-topStores />
+
+    <h2 class="categories">
+      Top Stores - <br />
+      by Category
+    </h2>
+    <h3>Food - Beverages - Coffee</h3>
+    <div>
+      <a
+        (click)="scrollToTop()"
+        class="link-offset-1 link-underline link-underlinea-opacity-0"
+        routerLink="/topStoresFood"
+        routerLinkActive="active"
+      >
+        <img
+          src="./assets/img/food-about.jpg"
+          width="400px"
+          height="250px"
+          alt="Food Image"
+      /></a>
+      <a
+        (click)="scrollToTop()"
+        class="link-offset-1 link-underline link-underline-opacity-0"
+        routerLink="/topStoresBeverages"
+        routerLinkActive="active"
+      >
+        <img
+          src="./assets/img/drink-main.jpg"
+          width="400px"
+          height="250px"
+          alt="Drink Image"
+      /></a>
+      <a
+        (click)="scrollToTop()"
+        class="link-offset-1 link-underline link-underline-opacity-0"
+        routerLink="/topStoresCoffee"
+        routerLinkActive="active"
+      >
+        <img
+          src="./assets/img/coffee.jpg"
+          width="400px"
+          height="250px"
+          alt="Drink Image"
+      /></a>
+    </div>
+  </div>
+</div>

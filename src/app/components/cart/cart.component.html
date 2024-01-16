@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 [ngClass]="{ 'order-page': isOrderPage }">Cart</h1>
+
+  <div *ngIf="cartProducts && cartProducts.length > 0">
+    <div *ngFor="let product of cartProducts; let i = index">
+      <div class="cart-item">
+        <div class="product-details">
+          <h5>{{ product.productName }}</h5>
+          <p class="description">{{ product.description }}</p>
+          <p>Price: ${{ product.price }}</p>
+          <p>
+            Product Quantity:
+            {{ product.count }}
+          </p>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <div class="total-price">Total Price: ${{ totalPrice }}</div>
+  </div>
+  <div class="empty" *ngIf="!cartProducts || cartProducts.length === 0">
+    Your cart is empty.
+  </div>
+</div>

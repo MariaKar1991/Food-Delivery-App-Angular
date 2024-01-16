@@ -1,0 +1,92 @@
+<div class="container">
+  <nav class="navbar" [ngClass]="{ 'mobile-menu': isMobileScreen }">
+    <div class="navbar-brand" routerLink="/">We Lead</div>
+    <div class="navbar-links">
+      <div class="navbar-item" routerLink="/home" routerLinkActive="active">
+        Home
+      </div>
+      <div class="navbar-item" routerLink="/about" routerLinkActive="active">
+        About
+      </div>
+      <div class="navbar-item" routerLink="/contact" routerLinkActive="active">
+        Contact
+      </div>
+      <div
+        class="navbar-item dropdown product"
+        (mouseenter)="toggleDropdown('products', true)"
+        (mouseleave)="toggleDropdown('products', false)"
+      >
+        <div
+          class="dropdown-toggle"
+          role="button"
+          (click)="toggleDropdown('stores')"
+        >
+          Stores
+        </div>
+        <div
+          class="dropdown-menu"
+          [ngClass]="{ show: isDropdownOpen['stores'] }"
+          (mouseenter)="toggleDropdown('stores', true)"
+          (mouseleave)="toggleDropdown('stores', false)"
+        >
+          <p>Categories</p>
+          <ul>
+            <li class="category-link" routerLink="/foodStores">Food</li>
+          </ul>
+          <ul>
+            <li class="category-link" routerLink="/coffeeStores">Coffee</li>
+          </ul>
+          <ul>
+            <li class="category-link" routerLink="/beveragesStores">
+              Beverages
+            </li>
+          </ul>
+          <ul>
+            <li class="all-stores" routerLink="/stores">View all stores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <app-search />
+    </div>
+
+    <div class="navbar-actions">
+      <div
+        class="navbar-item2"
+        *ngIf="!isRegistered && !isRegistrationPage"
+        routerLink="/register"
+        routerLinkActive="active"
+      >
+        <button>Register</button>
+      </div>
+      <div
+        class="navbar-item2 dropdown"
+        *ngIf="isRegistered"
+        (mouseenter)="toggleDropdown('account', true)"
+        (mouseleave)="toggleDropdown('account', false)"
+      >
+        <div class="avatar-container" (click)="toggleDropdown('account')">
+          <img src="/assets/img/avatar.png" alt="avatar icon" />
+          My Profile
+          <img
+            class="arrow"
+            src="/assets/img/down-arrow.png"
+            alt="arrow down icon"
+          />
+        </div>
+        <div
+          class="dropdown-menu"
+          [ngClass]="{ show: isDropdownOpen['account'] }"
+          (mouseenter)="toggleDropdown('account', true)"
+          (mouseleave)="toggleDropdown('account', false)"
+        >
+          <div class="dropdown-item" routerLink="/account">Account</div>
+          <div class="dropdown-item" routerLink="/all-placed-orders">
+            Orders
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

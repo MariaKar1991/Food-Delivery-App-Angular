@@ -1,0 +1,41 @@
+[
+  {
+    "OrderId": "1",
+    "customerId": "1",
+    "orderDate": "...",
+    "price": 4.99,
+    "statusOfOrder": "lorem ipsum....",
+    "ingredients": "lorem ipsum...",
+    "paymentInfo": "...",
+    "products": "products list",
+    "photo": "/assets/img/store-order.jpg",
+    "store": "lorem ipsum",
+    "storeId": "1"
+  },
+  {
+    "OrderId": "2",
+    "customerId": "2",
+    "orderDate": "...",
+    "price": 4.99,
+    "statusOfOrder": "lorem ipsum....",
+    "ingredients": "lorem ipsum...",
+    "paymentInfo": "...",
+    "products": "products list",
+    "photo": "/assets/img/store-order2.jpg",
+    "store": "lorem ipsum",
+    "storeId": "2"
+  },
+  {
+    "OrderId": "3",
+    "customerId": "3",
+    "orderDate": "...",
+    "price": 4.99,
+    "statusOfOrder": "lorem ipsum....",
+    "ingredients": "lorem ipsum...",
+    "paymentInfo": "...",
+    "products": "products list",
+    "photo": "/assets/img/store-order3.jpg",
+    "store": "lorem ipsum",
+    "storeId": "3"
+  }
+]

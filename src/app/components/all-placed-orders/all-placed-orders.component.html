@@ -1,0 +1,29 @@
+<div class="container">
+  <img src="./assets/img/order-list.jpg" alt="food photo" />
+  <h1 class="heading">My Order List</h1>
+  <ng-template
+    *ngIf="hasLoaded; then orderBlock; else noOrderBlock"
+  ></ng-template>
+  <ng-template #orderBlock>
+    <div
+      style="display: flex; justify-content: center; cursor: pointer"
+      class="table"
+    >
+      <table>
+        <tr
+          *ngFor="let order of orders; let i = index"
+          (click)="viewOrderDetails(order.OrderId)"
+          title="Click For Details"
+        >
+          <td><img src="{{ order.photo }}" class="store-img" /></td>
+          <td><span>Store:</span> {{ order.store }}</td>
+          <td><span>CustomerID:</span> {{ order.customerId }}</td>
+          <td><span>OrderId:</span> {{ order.OrderId }}</td>
+        </tr>
+      </table>
+    </div>
+  </ng-template>
+  <ng-template #noOrderBlock>
+    <h1>Loading Orders...</h1>
+  </ng-template>
+</div>

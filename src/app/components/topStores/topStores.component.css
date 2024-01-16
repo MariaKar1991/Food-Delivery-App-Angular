@@ -38,12 +38,12 @@
 /* Media Queries for Extra Large Screens */
 @media screen and (min-width: 1200px) {
   .card {
-    margin-left: 150px;
+    margin-left: 140px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .card {
-    margin-left: 200px;
+    margin-left: 80px;
   }
 }

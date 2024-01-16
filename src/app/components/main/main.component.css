@@ -152,7 +152,7 @@ a img {
   }
 
   .link-offset-1 {
-    margin-left: 240px;
+    margin-left: 230px;
   }
 }
 
@@ -177,6 +177,9 @@ a img {
 @media screen and (min-width: 1600px) {
   .carousel-indicators {
     display: none;
+  }
+  .link-offset-1 {
+    margin-left: 420px;
   }
 }
 

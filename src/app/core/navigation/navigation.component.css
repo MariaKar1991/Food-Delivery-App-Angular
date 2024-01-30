@@ -203,6 +203,10 @@ p {
 .mobile-menu .navbar-item {
   padding-right: 0;
 }
+.navbar-actions {
+  margin-top: 10px;
+}
+
 
 @media screen and (max-width: 1400px) {
   .navbar-links {

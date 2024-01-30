@@ -34,7 +34,7 @@ export class AllPlacedOrdersComponent implements OnInit {
         this.orders = response;
         this.hasLoaded = true;
       },
-      error: (error) => {
+      error: (error: any) => {
         console.error("Error fetching orders:", error);
       },
     });

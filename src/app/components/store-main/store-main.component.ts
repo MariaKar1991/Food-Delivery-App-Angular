@@ -44,7 +44,7 @@ export class StoreMainComponent implements OnInit {
 
   ngOnInit() {
     // Extract the storeId from the route parameters
-    this.route.params.subscribe((params) => {
+    this.route.params.subscribe((params: any) => {
       this.storeId = +params["storeId"];
 
       // Fetch store details based on storeId
@@ -58,7 +58,7 @@ export class StoreMainComponent implements OnInit {
     });
 
     // Subscribe to changes in the cart count from the store menu
-    this.cartService.cartCount$.subscribe((count) => {
+    this.cartService.cartCount$.subscribe((count: any) => {
       this.cartCountFromStoreMenu = count;
     });
   }

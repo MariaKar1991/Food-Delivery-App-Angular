@@ -69,7 +69,7 @@ export class OrderComponent implements OnInit {
           }
         }
       },
-      error: (error) => {
+      error: (error: any) => {
         console.error("Error fetching order:", error);
       },
     });
@@ -82,7 +82,7 @@ export class OrderComponent implements OnInit {
   getProduct(ProductId: number): void {
     this.productService
       .getProductById(ProductId)
-      .subscribe((retrievedProduct) => {
+      .subscribe((retrievedProduct: any) => {
         this.product = retrievedProduct;
       });
   }
@@ -91,10 +91,10 @@ export class OrderComponent implements OnInit {
   createOrder(order: Order): void {
     if (this.product) {
       this.orderService.createOrder(order).subscribe({
-        next: (createdOrder) => {
+        next: (createdOrder: any) => {
           console.log("Order created successfully:", createdOrder);
         },
-        error: (error) => {
+        error: (error: any) => {
           console.error("Error creating order:", error);
         },
       });

@@ -24,12 +24,12 @@ export class CartComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.cartorderpage.cart$.subscribe((cart) => {
+    this.cartorderpage.cart$.subscribe((cart: any) => {
       this.cartProducts = cart;
       this.calculateTotalPrice();
     });
 
-    this.publisherService.listenForProduct().subscribe((product) => {
+    this.publisherService.listenForProduct().subscribe((product: any) => {
       this.defineProductAction(product);
     });
   }

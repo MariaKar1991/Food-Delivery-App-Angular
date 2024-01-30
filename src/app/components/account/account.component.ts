@@ -22,19 +22,25 @@ import { Order } from "../../interfaces/order";
   styleUrl: "./account.component.css",
 })
 export class AccountComponent implements OnInit {
+  // Array to store user data
   user: User[] = [];
-  hasLoaded: boolean = false;
+  // Array to store order data
   order: Order[] = [];
-  userId: any;
+  // Variable to store user ID
 
+  // Constructor with dependency injection of UserService
   constructor(private userService: UserService) {}
 
+  // Lifecycle hook called after component initialization
   ngOnInit() {
+    // Subscribe to the getUser observable from UserService
     this.userService.getUser().subscribe({
+      // Callback function for successful response
       next: (response: User[]) => {
-        console.log("User:", response);
+        // Log the user data to the console
+        console.log('User:', response);
+        // Assign user data to the component property
         this.user = response;
-        this.hasLoaded = true;
       },
     });
   }

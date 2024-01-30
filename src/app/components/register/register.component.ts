@@ -44,14 +44,14 @@ export class RegisterComponent implements OnInit {
       // If the form is valid, submit user details to the UserService
       const userDetails = this.registrationForm.value;
       this.userService.postUser(userDetails).subscribe({
-        next: (response) => {
+        next: (response: any) => {
           // Handle successful registration
           this.registrationService.setRegistrationStatus(true);
 
           // Redirect to the account page after successful registration
           this.router.navigate(["/account"]);
         },
-        error: (error) => {
+        error: (error: any) => {
           // Handle registration error
           console.error("Registration failed:", error);
         },

@@ -35,20 +35,20 @@ export class NavigationComponent implements OnInit {
       isOpen !== undefined ? isOpen : !this.isDropdownOpen[key];
   }
 
-  ngOnInit() {
-    this.registrationService.isRegistered().subscribe((isRegistered) => {
+ ngOnInit() {
+    this.registrationService.isRegistered().subscribe((isRegistered: any) => {
       this.isRegistered = isRegistered;
     });
 
     this.isRegistered = this.registrationService.isUserRegistered();
 
-    this.router.events.subscribe((event) => {
+    this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         // Check if the current route is the registration page
         this.isRegistrationPage = event.url === "/register";
       }
-    });
-    this.activatedRoute.url.subscribe((urlSegments) => {
+    }); 
+    this.activatedRoute.url.subscribe((urlSegments: any) => {
       // Check if the last segment of the URL is 'register'
       this.isRegistrationPage =
         urlSegments[urlSegments.length - 1].path === "register";

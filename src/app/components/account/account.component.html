@@ -1,29 +1,41 @@
-<div class="container">
-  <img src="./assets/img/food-account.jpg" width="95%" />
+<!-- Container with flex properties, aligning items at the center -->
+<div class="container-fluid d-flex flex-column align-items-center">
+  <!-- Image for the account page -->
+  <img
+    src="./assets/img/food-account.jpg"
+    alt="Food Account Image"
+    width="95%"
+  />
 
+  <!-- Heading for the account page -->
   <h1 class="account-page-title">My Account</h1>
+
+  <!-- Inner container for the table -->
   <div class="inner-container">
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-      "
-    >
-      <table class="table-title">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-          <th>Phone</th>
-        </tr>
-        <tr *ngFor="let user of user; let i = index">
-          <td>{{ user.name }}</td>
-          <td>{{ user.surname }}</td>
-          <td>{{ user.email }}</td>
-          <td>{{ user.phoneNumber }}</td>
-        </tr>
+    <!-- Responsive table container -->
+    <div class="table-responsive">
+      <!-- Table with a specific styling class -->
+      <table class="table table-title">
+        <!-- Table header with column names -->
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+
+        <!-- Table body for user data -->
+        <tbody>
+          <!-- Loop through each user and display their information -->
+          <tr *ngFor="let user of user; let i = index">
+            <td>{{ user.name }}</td>
+            <td>{{ user.surname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phoneNumber }}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

@@ -1,4 +1,5 @@
 ## Foodies - Food Delivery App - Angular 17 version
+## Link to Vercel: https://food-delivery-app-angular.vercel.app/
 
 ## Features
 

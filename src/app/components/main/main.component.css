@@ -90,3 +90,129 @@ a img {
   cursor: pointer;
   border: 2px solid white;
 }
+<<<<<<< HEAD
+=======
+
+/* Media Queries for Extra Small, Small, and Medium Screens */
+@media screen and (max-width: 575px) {
+
+  .categories {
+    margin-right: 30px;
+  }
+  .carousel-indicators {
+    bottom: 4500px;
+  }
+
+  a img {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .categories {
+    margin-right: 20px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+  a img {
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-indicators {
+    display: none;
+  }
+
+  .categories {
+    margin-left: 200px;
+  }
+
+  a img {
+    margin-left: 130px;
+
+    margin-bottom: 30px;
+  }
+}
+
+/* Media Queries for Large and Extra Large Screens */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .categories {
+    margin-right: -200px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .categories {
+    margin-right: 20px;
+  }
+
+  a img {
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories {
+    margin-left: 100px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  a img {
+    margin-left: 90px;
+    margin-bottom: 30px;
+  }
+}
+/* Media Queries for Extra Large Screens */
+@media screen and (min-width: 1400px) {
+  .carousel-indicators {
+    display: none;
+  }
+
+  a img {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .carousel-indicators {
+    display: none;
+  }
+  a img {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .carousel-indicators {
+    display: none;
+  }
+
+  a img {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .carousel-indicators {
+    display: none;
+  }
+
+  a img {
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+}
+>>>>>>> c0c387c33704b612c243f58be2bf7b0686fccbad

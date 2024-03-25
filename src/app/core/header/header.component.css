@@ -19,11 +19,11 @@ img {
   object-fit: cover;
 }
 
-.container {
+.container-fluid {
   margin-top: 140px;
 }
 
-.animate-charcter {
+.animate-character {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,

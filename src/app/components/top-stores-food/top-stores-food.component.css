@@ -2,8 +2,8 @@
   background-color: #13482f;
 }
 
-.container {
-  margin-top: 80px;
+.container-fluid {
+  padding-top: 20px;
   margin-bottom: -10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -58,30 +58,39 @@ h5 {
 .card {
   border: 3px solid white;
   margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Media Queries for Extra Small, Small, and Medium Screens */
+/* Media Queries for different screen sizes */
 @media screen and (max-width: 575px) {
   .card {
-    margin-left: 70px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .card {
-    margin-left: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* Media Queries for Large and Extra Large Screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .card {
-    margin-left: 180px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .card {
-    margin-left: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

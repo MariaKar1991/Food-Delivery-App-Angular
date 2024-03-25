@@ -1,9 +1,9 @@
-.container {
+.container-fluid {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-family: Arial, sans-serif;
   background-color: #13482f;
-  margin-top: 100px;
+  margin-top: 35px;
   padding: 30px;
   border: 8px solid #e5ad05;
 }

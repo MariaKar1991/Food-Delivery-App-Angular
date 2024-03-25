@@ -2,8 +2,8 @@
   background-color: #13482f;
 }
 
-.container {
-  margin-top: 75px;
+.container-fluid {
+  padding-top: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }

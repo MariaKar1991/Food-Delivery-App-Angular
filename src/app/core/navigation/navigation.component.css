@@ -1,21 +1,20 @@
-.container {
-  padding: 15px;
+.container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -40px;
   margin-top: 25px;
+  justify-content: center;
 }
 
 .navbar {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
   background-color: #f8f9fa;
   position: fixed;
   border-radius: 10px;
   z-index: 1000;
-  width: 85%;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -206,7 +205,6 @@ p {
 .navbar-actions {
   margin-top: 10px;
 }
-
 
 @media screen and (max-width: 1400px) {
   .navbar-links {

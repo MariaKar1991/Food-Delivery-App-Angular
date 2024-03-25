@@ -16,9 +16,13 @@ img {
   box-sizing: border-box;
 }
 
-.heading {
+.container-fluid {
   align-items: center;
   justify-content: center;
+}
+
+.heading {
+  text-align: center;
   padding-top: 140px;
   font-size: 55px;
   margin-bottom: 30px;
@@ -26,7 +30,7 @@ img {
 }
 
 .container-fluid {
-  margin-top: 80px;
+  padding-top: 25px;
   margin-bottom: -30px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

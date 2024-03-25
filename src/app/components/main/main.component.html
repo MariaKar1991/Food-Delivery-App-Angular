@@ -66,54 +66,52 @@
       </button>
     </div>
 
-    <!-- <h1 class="text-center m-4">Choose Your Favorite Foodies</h1> -->
-
     <h2>Top Stores</h2>
 
     <app-topStores />
 
-    <h2 class="categories">
-      Top Stores - <br />
-      by Category
-    </h2>
-    <h3>Food - Beverages - Coffee</h3>
-    <div>
-      <a
-        (click)="scrollToTop()"
-        class="link-offset-1 link-underline link-underlinea-opacity-0"
-        routerLink="/topStoresFood"
-        routerLinkActive="active"
-      >
-        <img
-          src="./assets/img/food-about.jpg"
-          width="400px"
-          height="250px"
-          alt="Food Image"
-      /></a>
-      <a
-        (click)="scrollToTop()"
-        class="link-offset-1 link-underline link-underline-opacity-0"
-        routerLink="/topStoresBeverages"
-        routerLinkActive="active"
-      >
-        <img
-          src="./assets/img/drink-main.jpg"
-          width="400px"
-          height="250px"
-          alt="Drink Image"
-      /></a>
-      <a
-        (click)="scrollToTop()"
-        class="link-offset-1 link-underline link-underline-opacity-0"
-        routerLink="/topStoresCoffee"
-        routerLinkActive="active"
-      >
-        <img
-          src="./assets/img/coffee.jpg"
-          width="400px"
-          height="250px"
-          alt="Drink Image"
-      /></a>
+    <h3>Top Stores <span>Food - Beverages - Coffee</span></h3>
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-4 mb-4">
+        <a
+          (click)="scrollToTop()"
+          routerLink="/topStoresFood"
+          routerLinkActive="active"
+        >
+          <img
+            src="./assets/img/food-about.jpg"
+            class="img-fluid"
+            alt="Food Image"
+          />
+        </a>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <a
+          (click)="scrollToTop()"
+          routerLink="/topStoresBeverages"
+          routerLinkActive="active"
+        >
+          <img
+            src="./assets/img/drink-main.jpg"
+            class="img-fluid"
+            alt="Drink Image"
+          />
+        </a>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <a
+          (click)="scrollToTop()"
+          routerLink="/topStoresCoffee"
+          routerLinkActive="active"
+        >
+          <img
+            src="./assets/img/coffee.jpg"
+            class="img-fluid"
+            alt="Coffee Image"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </div>
